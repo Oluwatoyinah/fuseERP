@@ -1,16 +1,56 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Button from "../../../components/shared/Button";
 import { dashboardIcons } from "../../../data-store/store";
 
-const { Cached, GreenCheck, BlackCheck, BlueCheck } = dashboardIcons;
+const {
+  Cached,
+  GreenCheck,
+  BlackCheck,
+  BlueCheck,
+  SelectArrowDown,
+  StickyNote,
+} = dashboardIcons;
 
 const InvoiceDetails = () => {
   return (
     <div className="invoice-details-page">
       <div className="row">
-        <div className="col-xl-9">a</div>
+        <div className="col-xl-9">
+          <div className="first-box">
+            <div className="first-box-tab">
+              <div className=" d-flex align-items-center gap-2">
+                <Link to="../">
+                  <span className="icon">
+                    <img src={StickyNote} alt="" />
+                  </span>
+                  <span className="text">Invoice</span>
+                </Link>
+                <img src={SelectArrowDown} alt="" />
+                <p>Invoice New Service Invoice</p>
+              </div>
+            </div>
+
+            <div className="invoice-details-header mb-4">
+              <h4>Invoice Details</h4>
+              <p>
+                Enter the invoice details below to start creating your invoice
+              </p>
+            </div>
+
+            <div className="invoice-details-body">
+              <form action="" className="row">
+                <div className="col-lg-8 mb-3">
+                  <div>
+                    <label htmlFor="">Invoice Number</label>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
         <div className="col-xl-3 ">
-          <div className="second-box">
+          <div className="second-box d-none d-xl-block">
             <div className="second-box-header">
               {" "}
               <h5>Create New Service Invoice</h5>

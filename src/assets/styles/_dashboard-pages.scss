@@ -257,6 +257,60 @@
 
 .invoice-details-page {
   position: relative;
+  .first-box {
+    padding: 20px 24px 30px 40px;
+    &-tab {
+      margin-bottom: 32px;
+      a {
+        color: $main-blue;
+        text-decoration: none;
+        display: flex;
+        gap: 2px;
+        align-items: center;
+
+        .text {
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 20px;
+          letter-spacing: 0.1px;
+        }
+      }
+
+      img {
+        rotate: -90deg;
+        width: auto;
+      }
+
+      p {
+        color: $grey-2;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20px;
+        letter-spacing: 0.1px;
+      }
+    }
+
+    .invoice-details-header {
+        
+      h4 {
+        color: $black;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 32px;
+      }
+      p {
+        color: $grey-1;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0.25px;
+      }
+    }
+  }
 
   .second-box {
     height: calc(100vh - 80px);
