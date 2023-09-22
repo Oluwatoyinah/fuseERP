@@ -139,6 +139,41 @@ const InvoiceDetails = () => {
                 <div className="col">
                   <hr style={{ borderSize: "2px" }} />
                 </div>
+
+                <div className="">
+                  <div>
+                    <h3 className="sub-title mb-2">Additional Items</h3>
+                  </div>
+                  <div className="col-md-8 mb-3">
+                    <div class="input-box">
+                      <input
+                        type="text"
+                        name="invoice_name"
+                        autocomplete="off"
+                        required
+                      />
+                      <label for="email" class="label-name">
+                        <span class="label-text">Invoice Note </span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div className="col-lg-12 mb-3">
+                    <div class="input-textarea-box">
+                      <textarea
+                        name=""
+                        id=""
+                        cols="30"
+                        rows="4"
+                        placeholder="Enter terms & condition"
+                      ></textarea>
+
+                      <label for="email" class="label-name">
+                        <span class="label-text">Terms & Condition</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
               </form>
             </div>
           </div>
