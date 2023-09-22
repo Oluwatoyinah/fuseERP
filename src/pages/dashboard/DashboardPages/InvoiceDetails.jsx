@@ -10,6 +10,7 @@ const {
   BlueCheck,
   SelectArrowDown,
   StickyNote,
+  BlueAdd,
 } = dashboardIcons;
 
 const InvoiceDetails = () => {
@@ -40,7 +41,7 @@ const InvoiceDetails = () => {
 
             <div className="invoice-details-body">
               <form action="" className="row auth-form">
-                <div className="col-md-8 mb-3">
+                <div className="col-md-8 mb-4">
                   <div class="input-box">
                     <input
                       type="text"
@@ -54,7 +55,7 @@ const InvoiceDetails = () => {
                   </div>
                 </div>
 
-                <div className="col-md-4 mb-3">
+                <div className="col-md-4 mb-4">
                   <div class="input-date-box">
                     <input
                       type="date"
@@ -68,7 +69,7 @@ const InvoiceDetails = () => {
                   </div>
                 </div>
 
-                <div className="col-lg-12 mb-3">
+                <div className="col-lg-12 mb-4">
                   <div class="input-box">
                     <input
                       type="text"
@@ -82,7 +83,7 @@ const InvoiceDetails = () => {
                   </div>
                 </div>
 
-                <div className="col-lg-12 mb-3">
+                <div className="col-lg-12 mb-4">
                   <div class="input-textarea-box">
                     <textarea
                       name=""
@@ -98,7 +99,7 @@ const InvoiceDetails = () => {
                   </div>
                 </div>
 
-                <div className="col-lg-7 col-md-6 mb-3">
+                <div className="col-lg-7 col-md-6 mb-4">
                   <div class="input-select-box">
                     <select name="" id="">
                       <option value="">Select When Due</option>
@@ -110,7 +111,7 @@ const InvoiceDetails = () => {
                   </div>
                 </div>
 
-                <div className="col-lg-5 col-md-6 mb-3">
+                <div className="col-lg-5 col-md-6 mb-4">
                   <div class="input-date-box">
                     <input
                       type="date"
@@ -136,15 +137,192 @@ const InvoiceDetails = () => {
                   </div>
                 </div>
 
-                <div className="col">
-                  <hr style={{ borderSize: "2px" }} />
+                <div className="col-12">
+                  <div className="divider"></div>
+                </div>
+
+                <div className="mb-5">
+                  <div className="item row gx-0">
+                    <div className=" mb-2 col-xl-6 col-lg-12">
+                      <div className="item-header">
+                        <h6>Item Details</h6>
+                      </div>
+
+                      <div className="item-body">
+                        <div className="col-xl-11">
+                          <div class="input-box">
+                            <input
+                              type="text"
+                              name=""
+                              autocomplete="off"
+                              placeholder="Enter item Description"
+                              required
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-xl-2 col-md-4 mb-2">
+                      <div className="item-header">
+                        <h6>Quantity</h6>
+                      </div>
+                      <div className="item-body">
+                        <div className="col-md-11">
+                          <div class="input-box">
+                            <input
+                              type="number"
+                              name=""
+                              autocomplete="off"
+                              placeholder="0.00"
+                              required
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-xl-2 col-md-4 mb-2">
+                      <div className="item-header">
+                        <h6>Unit Price</h6>
+                      </div>
+                      <div className="item-body">
+                        <div className="col-md-11">
+                          <div class="input-box">
+                            <input
+                              type="number"
+                              name=""
+                              autocomplete="off"
+                              placeholder="0.00"
+                              required
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-xl-2 col-md-4 mb-2">
+                      <div className="item-header">
+                        <h6>Amount</h6>
+                      </div>
+                      <div className="item-body">
+                        <div className="col-md-11">
+                          <div class="input-box">
+                            <input
+                              type="number"
+                              name=""
+                              autocomplete="off"
+                              placeholder="0.00"
+                              required
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="mb-3">
+                    <Button
+                      buttonText="Add Another Line Item"
+                      frontIconImgSrc={BlueAdd}
+                      bgColor="transparent"
+                      textColor="#2563eb"
+                      IconWidth={20}
+                      extraStyle={{ fontWeight: "700", padding: " 5px 0" }}
+                    />
+                  </div>
+
+                  <div className="total-box">
+                    <p>Subtotal</p>
+                    <p>0.00</p>
+                  </div>
+                </div>
+
+                <div className="mb-5">
+                  <div className="row mb-3">
+                    <div className="col-lg-8 col-md-10 ms-auto tax-details">
+                      <div className="mb-3">
+                        <h6>TAX(Select all that applies)</h6>
+                        <div className="d-flex gap-5 align-items-center">
+                          <div className="">
+                            <div className="d-flex gap-2 align-items-center">
+                              <input type="checkbox" checked />
+                              <label htmlFor="">Value Added Tax (VAT)</label>
+                            </div>
+                          </div>
+                          <div className="">
+                            <div className="d-flex gap-2 align-items-center">
+                              <input type="checkbox" />
+                              <label htmlFor="">Withholding Tax (WTH)</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="mb-3">
+                        <h6 className="text-uppercase">Withholding tax</h6>
+                        <div className="row gy-3">
+                          <div className="col-md-4">
+                            <div class="input-select-box">
+                              <select name="" id="">
+                                <option value="">Percentage</option>
+                              </select>
+
+                              {/* <label for="email" class="label-name">
+                                <span class="label-text">Invoice Due Date</span>
+                              </label> */}
+                            </div>
+                          </div>
+                          <div className="col-md-4 col-6">
+                            <div class="input-box">
+                              <input
+                                type="number"
+                                name="number"
+                                autocomplete="off"
+                                placeholder="0.00"
+                                required
+                              />
+                            </div>
+                          </div>
+                          <div className="col-md-4 col-6">
+                            <div class="input-box">
+                              <input
+                                type="number"
+                                name="number"
+                                autocomplete="off"
+                                placeholder="0.00"
+                                required
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="mb-3">
+                        <h6 className="text-uppercase">
+                          Shipping Fee (Optional)
+                        </h6>
+                        <div class="input-box">
+                          <input
+                            type="number"
+                            name="number"
+                            autocomplete="off"
+                            placeholder="0.00"
+                            required
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="total-box">
+                    <p>Total</p>
+                    <p>0.00</p>
+                  </div>
                 </div>
 
                 <div className="">
                   <div>
                     <h3 className="sub-title mb-2">Additional Items</h3>
                   </div>
-                  <div className="col-md-12 mb-3">
+                  <div className="col-md-12 mb-4">
                     <div class="input-box">
                       <input
                         type="text"
@@ -158,7 +336,7 @@ const InvoiceDetails = () => {
                     </div>
                   </div>
 
-                  <div className="col-lg-12 mb-3">
+                  <div className="col-lg-12 mb-4">
                     <div class="input-textarea-box">
                       <textarea
                         name=""

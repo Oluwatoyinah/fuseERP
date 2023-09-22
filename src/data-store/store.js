@@ -20,6 +20,7 @@ import GreenCheck from "../assets/icons/green-check.svg";
 import BlueCheck from "../assets/icons/blue-check.svg";
 import BlackCheck from "../assets/icons/black-check.svg";
 import StickyNote from "../assets/icons/sticky-note.svg";
+import BlueAdd from "../assets/icons/blue-add.svg";
 
 export const dashboardIcons = {
   Logo,
@@ -44,4 +45,5 @@ export const dashboardIcons = {
   BlackCheck,
   BlueCheck,
   StickyNote,
+  BlueAdd,
 };
