@@ -631,12 +631,52 @@
     position: relative;
 
     .bottom-bar {
+      left: 0;
       &-one {
         span.text {
           font-size: 14px;
         }
       }
       width: 100vw;
+    }
+  }
+
+  .invoice-details-page {
+    position: relative;
+    .first-box {
+      padding: 20px;
+      &-tab {
+        margin-bottom: 20px;
+        a {
+          color: $main-blue;
+          text-decoration: none;
+          display: flex;
+          gap: 2px;
+          align-items: center;
+
+          .text {
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 20px;
+            letter-spacing: 0.1px;
+          }
+        }
+
+        img {
+          rotate: -90deg;
+          width: auto;
+        }
+
+        p {
+          color: $grey-2;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 20px;
+          letter-spacing: 0.1px;
+        }
+      }
     }
   }
 }

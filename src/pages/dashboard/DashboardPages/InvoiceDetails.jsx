@@ -144,7 +144,7 @@ const InvoiceDetails = () => {
                   <div>
                     <h3 className="sub-title mb-2">Additional Items</h3>
                   </div>
-                  <div className="col-md-8 mb-3">
+                  <div className="col-md-12 mb-3">
                     <div class="input-box">
                       <input
                         type="text"
