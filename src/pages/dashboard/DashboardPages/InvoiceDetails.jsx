@@ -40,7 +40,7 @@ const InvoiceDetails = () => {
 
             <div className="invoice-details-body">
               <form action="" className="row auth-form">
-                <div className="col-lg-8 mb-3">
+                <div className="col-md-8 mb-3">
                   <div class="input-box">
                     <input
                       type="text"
@@ -54,7 +54,7 @@ const InvoiceDetails = () => {
                   </div>
                 </div>
 
-                <div className="col-lg-4 mb-3">
+                <div className="col-md-4 mb-3">
                   <div class="input-date-box">
                     <input
                       type="date"
@@ -83,48 +83,56 @@ const InvoiceDetails = () => {
                 </div>
 
                 <div className="col-lg-12 mb-3">
-                  <div class="input-box">
+                  <div class="input-textarea-box">
                     <textarea
                       name=""
                       id=""
                       cols="30"
                       rows="4"
-                      placeholder="Invoice Title"
+                      placeholder="Enter a title"
                     ></textarea>
-                    {/*                      
+
                     <label for="email" class="label-name">
                       <span class="label-text">Invoice Title </span>
-                    </label> */}
+                    </label>
                   </div>
                 </div>
 
-                <div className="col-lg-7 mb-3">
-                  <div class="input-box">
+                <div className="col-lg-7 col-md-6 mb-3">
+                  <div class="input-select-box">
                     <select name="" id="">
-                      <option value="">--Choose--</option>
+                      <option value="">Select When Due</option>
                     </select>
+
+                    <label for="email" class="label-name">
+                      <span class="label-text">Invoice Due Date</span>
+                    </label>
                   </div>
                 </div>
 
-                <div className="col-lg-5 mb-3">
-                  <div class="input-box">
+                <div className="col-lg-5 col-md-6 mb-3">
+                  <div class="input-date-box">
                     <input
                       type="date"
                       name="date"
                       autocomplete="off"
                       required
                     />
-                    {/* <label for="email" class="label-name">
-                      <span class="label-text"> Invoice Date </span>
-                    </label> */}
+                    <label for="email" class="label-name">
+                      <span class="label-text"> Date Date </span>
+                    </label>
                   </div>
                 </div>
 
                 <div className="col-lg-12 mb-2">
-                  <div class="input-box">
+                  <div class="input-select-box">
                     <select name="" id="">
-                      <option value="">Currency</option>
+                      <option value="">Select Preferred Currency</option>
                     </select>
+
+                    <label for="email" class="label-name">
+                      <span class="label-text">Currency </span>
+                    </label>
                   </div>
                 </div>
 
