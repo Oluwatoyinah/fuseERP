@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import FileUpload from "../../../components/FileUpload";
 import Button from "../../../components/shared/Button";
 import { dashboardIcons } from "../../../data-store/store";
 
@@ -16,8 +17,8 @@ const {
 const InvoiceDetails = () => {
   return (
     <div className="invoice-details-page">
-      <div className="row">
-        <div className="col-xl-9">
+      <div className="row gx-0">
+        <div className="col-xxl-9 col-xl-8">
           <div className="first-box">
             <div className="first-box-tab">
               <div className=" d-flex align-items-center gap-2">
@@ -125,7 +126,7 @@ const InvoiceDetails = () => {
                   </div>
                 </div>
 
-                <div className="col-lg-12 mb-2">
+                <div className="col-lg-12">
                   <div class="input-select-box">
                     <select name="" id="">
                       <option value="">Select Preferred Currency</option>
@@ -351,12 +352,21 @@ const InvoiceDetails = () => {
                       </label>
                     </div>
                   </div>
+
+                  <div className="col-12 mb-5">
+                    <h6 className="text-uppercase upload-label mb-2">
+                      Attach a supporting Document
+                    </h6>
+                    <div>
+                      <FileUpload />
+                    </div>
+                  </div>
                 </div>
               </form>
             </div>
           </div>
         </div>
-        <div className="col-xl-3 ">
+        <div className="col-xxl-3 col-xl-4">
           <div className="second-box d-none d-xl-block">
             <div className="second-box-header">
               {" "}
